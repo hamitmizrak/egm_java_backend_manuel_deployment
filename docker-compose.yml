@@ -1,7 +1,6 @@
 
 # docker-compose --version
 services:
-
   dailyapp:
     container_name: blog_react
     image: blog_react
