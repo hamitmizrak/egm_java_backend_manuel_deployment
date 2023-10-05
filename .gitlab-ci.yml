@@ -19,4 +19,5 @@ job_deploy:
     - echo "Merhabalar Deploy"
 
 include:
-  - local:  'ci_configs/.gitlab-ci-prod.yml'
+  - local: 'ci/prod/.gitlab-ci.yml'
+  - local: 'ci/dev/.gitlab-ci.yml'
