@@ -1,0 +1,251 @@
+2023-10-05T14:53:57.657+03:00  INFO 27156 --- [restartedMain] com.hamitmizrak.EgmBackendApplication    : Starting EgmBackendApplication using Java 17.0.5 with PID 27156 (D:\spring\EGM_Backend\target\classes started by 90553 in D:\spring\EGM_Backend)
+2023-10-05T14:53:57.661+03:00  INFO 27156 --- [restartedMain] com.hamitmizrak.EgmBackendApplication    : The following 1 profile is active: "frontend"
+2023-10-05T14:53:57.712+03:00  INFO 27156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-05T14:53:57.713+03:00  INFO 27156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-05T14:53:58.560+03:00  INFO 27156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T14:53:58.607+03:00  INFO 27156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
+2023-10-05T14:53:59.229+03:00  INFO 27156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 4444 (http)
+2023-10-05T14:53:59.242+03:00  INFO 27156 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T14:53:59.242+03:00  INFO 27156 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T14:53:59.323+03:00  INFO 27156 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-05T14:53:59.323+03:00  INFO 27156 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1608 ms
+2023-10-05T14:53:59.440+03:00  INFO 27156 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-05T14:53:59.642+03:00  INFO 27156 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:blog user=SA
+2023-10-05T14:53:59.643+03:00  INFO 27156 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-05T14:53:59.651+03:00  INFO 27156 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:blog'
+2023-10-05T14:53:59.712+03:00 DEBUG 27156 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-10-05T14:53:59.712+03:00 DEBUG 27156 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-10-05T14:54:00.071+03:00  INFO 27156 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T14:54:00.959+03:00  INFO 27156 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T14:54:01.361+03:00  WARN 27156 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T14:54:01.452+03:00 DEBUG 27156 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-05T14:54:01.476+03:00  INFO 27156 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T14:54:01.536+03:00 DEBUG 27156 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2023-10-05T14:54:01.978+03:00 DEBUG 27156 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-10-05T14:54:01.990+03:00 DEBUG 27156 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-05T14:54:02.401+03:00  INFO 27156 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2023-10-05T14:54:02.414+03:00  INFO 27156 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@783ccef1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70de0269, org.springframework.security.web.context.SecurityContextHolderFilter@51445eaa, org.springframework.security.web.header.HeaderWriterFilter@2eb788b8, org.springframework.web.filter.CorsFilter@485f0f99, org.springframework.security.web.csrf.CsrfFilter@20ef64ef, org.springframework.security.web.authentication.logout.LogoutFilter@7fba609c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@435bf536, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@30bbf6c3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5db881fa, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@10a31936, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@68e321c9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54039f2e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@436d97fa, org.springframework.security.web.access.ExceptionTranslationFilter@5f631442, org.springframework.security.web.access.intercept.AuthorizationFilter@673fcf42]
+2023-10-05T14:54:02.471+03:00  INFO 27156 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T14:54:02.529+03:00  INFO 27156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 4444 (http) with context path ''
+2023-10-05T14:54:02.543+03:00  INFO 27156 --- [restartedMain] com.hamitmizrak.EgmBackendApplication    : Started EgmBackendApplication in 5.305 seconds (process running for 6.072)
+2023-10-05T14:54:02.549+03:00  INFO 27156 --- [restartedMain] c.h.bean.BlogCommandLineRunner           : CommandLineRunner Çalıştı
+2023-10-05T14:56:34.347+03:00  INFO 27156 --- [http-nio-4444-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T14:56:34.347+03:00  INFO 27156 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T14:56:34.347+03:00 DEBUG 27156 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-10-05T14:56:34.347+03:00 DEBUG 27156 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-10-05T14:56:34.347+03:00 DEBUG 27156 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-10-05T14:56:34.350+03:00 DEBUG 27156 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5b710b3b
+2023-10-05T14:56:34.351+03:00 DEBUG 27156 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@27a63134
+2023-10-05T14:56:34.351+03:00 DEBUG 27156 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-05T14:56:34.351+03:00  INFO 27156 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-10-05T14:56:34.472+03:00 DEBUG 27156 --- [http-nio-4444-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-05T14:56:38.394+03:00 DEBUG 27156 --- [http-nio-4444-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-05T14:56:38.400+03:00 DEBUG 27156 --- [http-nio-4444-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-05T14:59:02.764+03:00  INFO 27156 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T14:59:03.144+03:00  WARN 27156 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-10-05T14:59:03.145+03:00  INFO 27156 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-05T14:59:03.290+03:00  INFO 27156 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-05T14:59:09.058+03:00  INFO 27932 --- [restartedMain] com.hamitmizrak.EgmBackendApplication    : Starting EgmBackendApplication using Java 17.0.5 with PID 27932 (D:\spring\EGM_Backend\target\classes started by 90553 in D:\spring\EGM_Backend)
+2023-10-05T14:59:09.060+03:00  INFO 27932 --- [restartedMain] com.hamitmizrak.EgmBackendApplication    : The following 1 profile is active: "frontend"
+2023-10-05T14:59:09.107+03:00  INFO 27932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-05T14:59:09.107+03:00  INFO 27932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-05T14:59:09.946+03:00  INFO 27932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T14:59:09.994+03:00  INFO 27932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
+2023-10-05T14:59:10.526+03:00  INFO 27932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 4444 (http)
+2023-10-05T14:59:10.537+03:00  INFO 27932 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T14:59:10.537+03:00  INFO 27932 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T14:59:10.597+03:00  INFO 27932 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-05T14:59:10.598+03:00  INFO 27932 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1491 ms
+2023-10-05T14:59:10.686+03:00  INFO 27932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-05T14:59:10.850+03:00  INFO 27932 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:blog user=SA
+2023-10-05T14:59:10.851+03:00  INFO 27932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-05T14:59:10.859+03:00  INFO 27932 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:blog'
+2023-10-05T14:59:10.917+03:00 DEBUG 27932 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-10-05T14:59:10.918+03:00 DEBUG 27932 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-10-05T14:59:11.214+03:00  INFO 27932 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T14:59:12.128+03:00  INFO 27932 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T14:59:12.658+03:00  WARN 27932 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T14:59:12.799+03:00 DEBUG 27932 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-05T14:59:12.831+03:00  INFO 27932 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T14:59:12.899+03:00 DEBUG 27932 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2023-10-05T14:59:13.320+03:00 DEBUG 27932 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-10-05T14:59:13.329+03:00 DEBUG 27932 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-05T14:59:13.684+03:00  INFO 27932 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T14:59:13.688+03:00  INFO 27932 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2023-10-05T14:59:13.761+03:00  INFO 27932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 4444 (http) with context path ''
+2023-10-05T14:59:13.775+03:00  INFO 27932 --- [restartedMain] com.hamitmizrak.EgmBackendApplication    : Started EgmBackendApplication in 5.129 seconds (process running for 6.233)
+2023-10-05T14:59:13.781+03:00  INFO 27932 --- [restartedMain] c.h.bean.BlogCommandLineRunner           : CommandLineRunner Çalıştı
+2023-10-05T14:59:20.714+03:00  INFO 27932 --- [http-nio-4444-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T14:59:20.714+03:00  INFO 27932 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T14:59:20.715+03:00 DEBUG 27932 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-10-05T14:59:20.715+03:00 DEBUG 27932 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-10-05T14:59:20.715+03:00 DEBUG 27932 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-10-05T14:59:20.717+03:00 DEBUG 27932 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@36466ec7
+2023-10-05T14:59:20.717+03:00 DEBUG 27932 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7c410962
+2023-10-05T14:59:20.717+03:00 DEBUG 27932 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-05T14:59:20.718+03:00  INFO 27932 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-10-05T14:59:20.734+03:00 DEBUG 27932 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2023-10-05T14:59:20.750+03:00 DEBUG 27932 --- [http-nio-4444-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-10-05T14:59:20.971+03:00 DEBUG 27932 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-05T14:59:20.991+03:00 DEBUG 27932 --- [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2023-10-05T14:59:20.994+03:00 DEBUG 27932 --- [http-nio-4444-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/js/template.js", parameters={}
+2023-10-05T14:59:21.000+03:00 DEBUG 27932 --- [http-nio-4444-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-05T14:59:21.000+03:00 DEBUG 27932 --- [http-nio-4444-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-05T14:59:21.014+03:00 DEBUG 27932 --- [http-nio-4444-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-05T14:59:21.014+03:00 DEBUG 27932 --- [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-05T14:59:21.191+03:00 DEBUG 27932 --- [http-nio-4444-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2023-10-05T14:59:21.192+03:00 DEBUG 27932 --- [http-nio-4444-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-05T14:59:21.195+03:00 DEBUG 27932 --- [http-nio-4444-exec-6] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-10-05T14:59:21.196+03:00 DEBUG 27932 --- [http-nio-4444-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-10-05T14:59:21.204+03:00 DEBUG 27932 --- [http-nio-4444-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-10-05T14:59:21.207+03:00 DEBUG 27932 --- [http-nio-4444-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hamitmizrak.error.CustomErrorHandleWebRequest#handleErrorMethod(WebRequest)
+2023-10-05T14:59:21.246+03:00 DEBUG 27932 --- [http-nio-4444-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2023-10-05T14:59:21.254+03:00 DEBUG 27932 --- [http-nio-4444-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResult(path=/favicon.ico, message=No message available, error=null, status=404, createdDate=Thu O (truncated)...]
+2023-10-05T14:59:21.272+03:00 DEBUG 27932 --- [http-nio-4444-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-10-05T14:59:43.695+03:00  INFO 27932 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T14:59:44.081+03:00  WARN 27932 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-10-05T14:59:44.082+03:00  INFO 27932 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-05T14:59:44.239+03:00  INFO 27932 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-05T15:08:08.586+03:00  INFO 8364 --- [restartedMain] com.hamitmizrak.EgmBackendApplication    : Starting EgmBackendApplication using Java 17.0.5 with PID 8364 (D:\spring\EGM_Backend\target\classes started by 90553 in D:\spring\EGM_Backend)
+2023-10-05T15:08:08.589+03:00  INFO 8364 --- [restartedMain] com.hamitmizrak.EgmBackendApplication    : The following 1 profile is active: "frontend"
+2023-10-05T15:08:08.636+03:00  INFO 8364 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-05T15:08:08.637+03:00  INFO 8364 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-05T15:08:09.450+03:00  INFO 8364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T15:08:09.494+03:00  INFO 8364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 3 JPA repository interfaces.
+2023-10-05T15:08:09.974+03:00  INFO 8364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 4444 (http)
+2023-10-05T15:08:09.980+03:00  INFO 8364 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T15:08:09.980+03:00  INFO 8364 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T15:08:10.024+03:00  INFO 8364 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-05T15:08:10.024+03:00  INFO 8364 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1387 ms
+2023-10-05T15:08:10.091+03:00  INFO 8364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-05T15:08:10.265+03:00  INFO 8364 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:blog user=SA
+2023-10-05T15:08:10.267+03:00  INFO 8364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-05T15:08:10.276+03:00  INFO 8364 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:blog'
+2023-10-05T15:08:10.349+03:00 DEBUG 8364 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-10-05T15:08:10.349+03:00 DEBUG 8364 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-10-05T15:08:10.660+03:00  INFO 8364 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T15:08:11.569+03:00  INFO 8364 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T15:08:11.941+03:00  WARN 8364 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T15:08:12.031+03:00 DEBUG 8364 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-05T15:08:12.060+03:00  INFO 8364 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T15:08:12.119+03:00 DEBUG 8364 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2023-10-05T15:08:12.501+03:00 DEBUG 8364 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-10-05T15:08:12.508+03:00 DEBUG 8364 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-05T15:08:12.813+03:00  INFO 8364 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T15:08:12.817+03:00  INFO 8364 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2023-10-05T15:08:12.882+03:00  INFO 8364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 4444 (http) with context path ''
+2023-10-05T15:08:12.896+03:00  INFO 8364 --- [restartedMain] com.hamitmizrak.EgmBackendApplication    : Started EgmBackendApplication in 4.88 seconds (process running for 5.784)
+2023-10-05T15:08:12.902+03:00  INFO 8364 --- [restartedMain] c.h.bean.BlogCommandLineRunner           : CommandLineRunner Çalıştı
+2023-10-05T15:24:31.680+03:00  INFO 8364 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T15:24:32.054+03:00  WARN 8364 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-10-05T15:24:32.054+03:00  INFO 8364 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-05T15:24:32.196+03:00  INFO 8364 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-05T15:24:38.303+03:00  INFO 11080 --- [restartedMain] com.hamitmizrak.EgmBackendApplication    : Starting EgmBackendApplication using Java 17.0.5 with PID 11080 (D:\spring\EGM_Backend\target\classes started by 90553 in D:\spring\EGM_Backend)
+2023-10-05T15:24:38.305+03:00  INFO 11080 --- [restartedMain] com.hamitmizrak.EgmBackendApplication    : The following 1 profile is active: "frontend"
+2023-10-05T15:24:38.348+03:00  INFO 11080 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-05T15:24:38.349+03:00  INFO 11080 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-05T15:24:39.225+03:00  INFO 11080 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T15:24:39.279+03:00  INFO 11080 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2023-10-05T15:24:39.859+03:00  INFO 11080 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 4444 (http)
+2023-10-05T15:24:39.865+03:00  INFO 11080 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T15:24:39.866+03:00  INFO 11080 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T15:24:39.915+03:00  INFO 11080 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-05T15:24:39.916+03:00  INFO 11080 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1566 ms
+2023-10-05T15:24:40.004+03:00  INFO 11080 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-05T15:24:40.164+03:00  INFO 11080 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:blog user=SA
+2023-10-05T15:24:40.165+03:00  INFO 11080 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-05T15:24:40.174+03:00  INFO 11080 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:blog'
+2023-10-05T15:24:40.235+03:00 DEBUG 11080 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-10-05T15:24:40.235+03:00 DEBUG 11080 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-10-05T15:24:40.669+03:00  INFO 11080 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T15:24:41.971+03:00  INFO 11080 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T15:24:42.416+03:00  WARN 11080 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T15:24:42.516+03:00 DEBUG 11080 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-05T15:24:42.539+03:00  INFO 11080 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T15:24:42.588+03:00 DEBUG 11080 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2023-10-05T15:24:43.060+03:00 DEBUG 11080 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-10-05T15:24:43.069+03:00 DEBUG 11080 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-05T15:24:43.520+03:00  INFO 11080 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T15:24:43.524+03:00  INFO 11080 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2023-10-05T15:24:43.605+03:00  INFO 11080 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 4444 (http) with context path ''
+2023-10-05T15:24:43.621+03:00  INFO 11080 --- [restartedMain] com.hamitmizrak.EgmBackendApplication    : Started EgmBackendApplication in 5.724 seconds (process running for 6.712)
+2023-10-05T15:24:43.628+03:00  INFO 11080 --- [restartedMain] c.h.bean.BlogCommandLineRunner           : CommandLineRunner Çalıştı
+2023-10-05T15:24:51.116+03:00  INFO 11080 --- [http-nio-4444-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T15:24:51.116+03:00  INFO 11080 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T15:24:51.117+03:00 DEBUG 11080 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-10-05T15:24:51.117+03:00 DEBUG 11080 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-10-05T15:24:51.117+03:00 DEBUG 11080 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-10-05T15:24:51.120+03:00 DEBUG 11080 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7e6faa24
+2023-10-05T15:24:51.121+03:00 DEBUG 11080 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2871277a
+2023-10-05T15:24:51.121+03:00 DEBUG 11080 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-05T15:24:51.122+03:00  INFO 11080 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-10-05T15:24:51.145+03:00 DEBUG 11080 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2023-10-05T15:24:51.161+03:00 DEBUG 11080 --- [http-nio-4444-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-10-05T15:24:51.379+03:00 DEBUG 11080 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-05T15:24:51.406+03:00 DEBUG 11080 --- [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2023-10-05T15:24:51.407+03:00 DEBUG 11080 --- [http-nio-4444-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/js/template.js", parameters={}
+2023-10-05T15:24:51.413+03:00 DEBUG 11080 --- [http-nio-4444-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-05T15:24:51.413+03:00 DEBUG 11080 --- [http-nio-4444-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-05T15:24:51.425+03:00 DEBUG 11080 --- [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-05T15:24:51.425+03:00 DEBUG 11080 --- [http-nio-4444-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-05T15:24:51.664+03:00 DEBUG 11080 --- [http-nio-4444-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2023-10-05T15:24:51.667+03:00 DEBUG 11080 --- [http-nio-4444-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-05T15:24:51.672+03:00 DEBUG 11080 --- [http-nio-4444-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-10-05T15:24:51.672+03:00 DEBUG 11080 --- [http-nio-4444-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-10-05T15:24:51.678+03:00 DEBUG 11080 --- [http-nio-4444-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-10-05T15:24:51.681+03:00 DEBUG 11080 --- [http-nio-4444-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hamitmizrak.error.CustomErrorHandleWebRequest#handleErrorMethod(WebRequest)
+2023-10-05T15:24:51.712+03:00 DEBUG 11080 --- [http-nio-4444-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2023-10-05T15:24:51.720+03:00 DEBUG 11080 --- [http-nio-4444-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResult(path=/favicon.ico, message=No message available, error=null, status=404, createdDate=Thu O (truncated)...]
+2023-10-05T15:24:51.738+03:00 DEBUG 11080 --- [http-nio-4444-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-10-05T15:24:59.697+03:00  INFO 11080 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T15:25:00.092+03:00  WARN 11080 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-10-05T15:25:00.095+03:00  INFO 11080 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-05T15:25:00.233+03:00  INFO 11080 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-05T15:26:51.093+03:00  INFO 3640 --- [main] c.h.EgmBackendApplicationTests           : Starting EgmBackendApplicationTests using Java 17.0.5 with PID 3640 (started by 90553 in D:\spring\EGM_Backend)
+2023-10-05T15:26:51.096+03:00  INFO 3640 --- [main] c.h.EgmBackendApplicationTests           : The following 1 profile is active: "frontend"
+2023-10-05T15:26:51.147+03:00 DEBUG 3640 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3be8821f
+2023-10-05T15:26:52.575+03:00  INFO 3640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T15:26:52.648+03:00  INFO 3640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 3 JPA repository interfaces.
+2023-10-05T15:26:54.116+03:00  INFO 3640 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T15:26:54.133+03:00  INFO 3640 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-05T15:26:54.340+03:00  INFO 3640 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:blog user=SA
+2023-10-05T15:26:54.342+03:00  INFO 3640 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-05T15:26:55.754+03:00  INFO 3640 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T15:26:56.528+03:00  WARN 3640 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T15:26:56.681+03:00 DEBUG 3640 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-05T15:26:56.711+03:00  INFO 3640 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T15:26:56.831+03:00 DEBUG 3640 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2023-10-05T15:26:57.870+03:00 DEBUG 3640 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-10-05T15:26:57.892+03:00 DEBUG 3640 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-05T15:26:58.370+03:00  INFO 3640 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:blog'
+2023-10-05T15:26:58.405+03:00  INFO 3640 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-10-05T15:26:58.487+03:00  INFO 3640 --- [main] c.h.EgmBackendApplicationTests           : Started EgmBackendApplicationTests in 7.853 seconds (process running for 8.805)
+2023-10-05T15:26:58.534+03:00  INFO 3640 --- [main] c.h.bean.BlogCommandLineRunner           : CommandLineRunner �al��t�
+2023-10-05T15:26:59.214+03:00 DEBUG 3640 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3be8821f, started on Thu Oct 05 17:56:51 IST 2023
+2023-10-05T15:26:59.221+03:00  INFO 3640 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T15:26:59.225+03:00  INFO 3640 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-05T15:26:59.229+03:00  INFO 3640 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-05T16:01:18.577+03:00  INFO 20232 --- [main] c.h.EgmBackendApplicationTests           : Starting EgmBackendApplicationTests using Java 17.0.5 with PID 20232 (started by 90553 in D:\spring\EGM_Backend)
+2023-10-05T16:01:18.580+03:00  INFO 20232 --- [main] c.h.EgmBackendApplicationTests           : The following 1 profile is active: "frontend"
+2023-10-05T16:01:18.617+03:00 DEBUG 20232 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3be8821f
+2023-10-05T16:01:19.911+03:00  INFO 20232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T16:01:19.975+03:00  INFO 20232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 3 JPA repository interfaces.
+2023-10-05T16:01:21.113+03:00  INFO 20232 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T16:01:21.136+03:00  INFO 20232 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-05T16:01:21.355+03:00  INFO 20232 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:blog user=SA
+2023-10-05T16:01:21.356+03:00  INFO 20232 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-05T16:01:22.446+03:00  INFO 20232 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T16:01:23.149+03:00  WARN 20232 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T16:01:23.339+03:00 DEBUG 20232 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-05T16:01:23.374+03:00  INFO 20232 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T16:01:23.467+03:00 DEBUG 20232 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2023-10-05T16:01:24.158+03:00 DEBUG 20232 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-10-05T16:01:24.167+03:00 DEBUG 20232 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-05T16:01:24.627+03:00  INFO 20232 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:blog'
+2023-10-05T16:01:24.648+03:00  INFO 20232 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-10-05T16:01:24.720+03:00  INFO 20232 --- [main] c.h.EgmBackendApplicationTests           : Started EgmBackendApplicationTests in 6.48 seconds (process running for 7.556)
+2023-10-05T16:01:24.770+03:00  INFO 20232 --- [main] c.h.bean.BlogCommandLineRunner           : CommandLineRunner �al��t�
+2023-10-05T16:01:25.323+03:00 DEBUG 20232 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3be8821f, started on Thu Oct 05 18:31:18 IST 2023
+2023-10-05T16:01:25.328+03:00  INFO 20232 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T16:01:25.331+03:00  INFO 20232 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-05T16:01:25.333+03:00  INFO 20232 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

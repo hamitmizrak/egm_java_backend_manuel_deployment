@@ -19,8 +19,10 @@
     <description>EGM_Backend</description>
 
     <!--  packaging  -->
-    <!-- <packaging>jar</packaging> -->
-    <packaging>war</packaging>
+    <!--manuel deployment icin-->
+    <!-- <packaging>war</packaging>-->
+     <packaging>jar</packaging>
+
 
 
     <!--properties-->
