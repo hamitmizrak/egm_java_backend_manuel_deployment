@@ -1,0 +1,14 @@
+
+# docker-compose --version
+
+services:
+  dailyapp:
+    container_name: blog_react
+    image: blog_react
+    restart: always
+    build: ./
+    ports:
+      - "4444:4444"
+
+
+
