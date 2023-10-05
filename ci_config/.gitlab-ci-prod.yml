@@ -6,17 +6,14 @@ stages:
 job_build:
   stage: build
   script:
-    - echo "Merhaba Build"
+    - echo "Merhaba Build Prod"
 
 job_test:
   stage: test
   script:
-    - echo "Merhaba Test"
+    - echo "Merhaba Test Prod"
 
 job_deploy:
   stage: deploy
   script:
-    - echo "Merhabalar Deploy"
-
-include:
-  - local:  'ci_configs/.gitlab-ci-prod.yml'
+    - echo "Merhabalar Deploy Prod"
