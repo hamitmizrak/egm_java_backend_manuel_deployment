@@ -1,0 +1,19 @@
+stages:
+  - build
+  - test
+  - deployment
+
+job_build:
+  stage: build
+  script:
+    - echo "Build başladı"
+
+job_test:
+  stage: test
+  script:
+    - echo "test başladı"
+
+job_deployment:
+  stage: deployment
+  script:
+    - echo "deployment başladı"
