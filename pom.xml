@@ -18,6 +18,7 @@
     <name>EGM_Backend</name>
     <description>EGM_Backend</description>
 
+
     <!--  packaging  -->
     <!--manuel deployment icin-->
     <!-- <packaging>war</packaging>-->
