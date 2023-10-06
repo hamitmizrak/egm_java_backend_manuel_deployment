@@ -30,6 +30,7 @@ EXPOSE 4444
 
 # jar dosyasını nerde bulacağım
 # ARG JAR_FILE=/target/*.war
+# Eğer birden fazla jar varsa sadece onun ismini yaz
 ARG JAR_FILE=/target/*.jar
 
 # Add
