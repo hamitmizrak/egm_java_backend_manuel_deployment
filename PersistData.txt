@@ -1,3 +1,8 @@
 Dockerfile
 
 Docker Compose
+
+---------------------------------------------------------------
+#Image PUSH
+docker image tag blog_react  javahamitmizrak/egmbackend
+docker push  javahamitmizrak/egmbackend
