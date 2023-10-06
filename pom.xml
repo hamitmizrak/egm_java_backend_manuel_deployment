@@ -23,8 +23,6 @@
     <!-- <packaging>war</packaging>-->
      <packaging>jar</packaging>
 
-
-
     <!--properties-->
     <properties>
         <encoding>UTF-8</encoding>
