@@ -28,6 +28,7 @@ import java.util.TimeZone;
 // Auditing Aktif etmek
 @EnableJpaAuditing(auditorAwareRef = "auditorAwareBeanMethod")
 
+
 // Spring Security
 @SpringBootApplication(exclude = {
         //SecurityAutoConfiguration.class,
