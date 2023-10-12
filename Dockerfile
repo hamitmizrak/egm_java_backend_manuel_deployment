@@ -37,8 +37,12 @@ ARG JAR_FILE=/target/*.jar
 ADD ${JAR_FILE} blog_react
 
 # Container çalışıyor mu çalışmıyor mu
+# --interval=30s  ==> Sağlık kontrolunde her 30 saniyede bir kontrol yapmak
+# --timeout=3s    ==> Kontrol komutun maksimum çalışma süresini gösterir.
+# Eğer bu 3s komutu belirtilenin dışına çıkarsa Docker sağlıksız olarak işaretlenir
+# CMD wget --quiet --tries=1 --spider http://localhost : wget ile localhost istek atmak
 HEALTHCHECK --interval=30s --timeout=3s \
-  CMD wget --quiet --tries=1 --spider http://localhost || exit 1
+  CMD wget --quiet --tries=1 --spider http://localhost:4444 || exit 1
 
 ENTRYPOINT ["java","-jar","/blog_react"]
 
